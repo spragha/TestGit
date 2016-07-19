@@ -1,0 +1,76 @@
+-------------------------------------XPATH---------------------------------------------
+
+<?xml version="1.0" encoding="UTF-8"?>
+<Employees>
+    <Employee id="1">
+        <age>29</age>
+        <name>Pankaj</name>
+        <gender>Male</gender>
+        <role>Java Developer</role>
+    </Employee>
+    <Employee id="2">
+        <age>35</age>
+        <name>Lisa</name>
+        <gender>Female</gender>
+        <role>CEO</role>
+    </Employee>
+    <Employee id="3">
+        <age>40</age>
+        <name>Tom</name>
+        <gender>Male</gender>
+        <role>Manager</role>
+    </Employee>
+    <Employee id="4">
+        <age>25</age>
+        <name>Meghna</name>
+        <gender>Female</gender>
+        <role>Manager</role>
+    </Employee>
+</Employees>
+
+
+// Create XPathFactory object
+XPathFactory xpathFactory = XPathFactory.newInstance();
+ 
+// Create XPath object
+XPath xpath = xpathFactory.newXPath();
+
+XPathExpression expr = xpath.compile("/Employees/Employee[gender='Female']/name/text()");	
+NodeList nodes = (NodeList) expr.evaluate(doc, XPathConstants.NODESET);
+
+XPathExpression expr = xpath.compile("/Employees/Employee[@id='" + id + "']/name/text()");
+name = (String) expr.evaluate(doc, XPathConstants.STRING);
+
+XPathExpression expr = xpath.compile("/Employees/Employee[age>" + age + "]/name/text()");
+NodeList nodes = (NodeList) expr.evaluate(doc, XPathConstants.NODESET);
+           
+==================================================================
+
+XPathConstants.STRING
+XPathConstants.NUMBER
+XPathConstants.BOOLEAN
+XPathConstants.NODE
+XPathConstants.NODESET
+
+Expression		Description
+nodename		Selects all nodes with the name “nodename”
+/			Selects from the root node
+//			Selects nodes in the document from the current node that match the selection no matter where they are
+.			Selects the current node
+..			Selects the parent of the current node
+@			Selects attributes
+employee		Selects all nodes with the name “employee”
+employees/employee	Selects all employee elements that are children of employees
+//employee		Selects all book elements no matter where they are in the document
+
+String expression = "/Employees/Employee[@emplid='3333']/email"; 
+//read a string value
+String email = xPath.compile(expression).evaluate(xmlDocument);
+ 
+//read an xml node using xpath
+Node node = (Node) xPath.compile(expression).evaluate(xmlDocument, XPathConstants.NODE);
+ 
+//read a nodelist using xpath
+NodeList nodeList = (NodeList) xPath.compile(expression).evaluate(xmlDocument, XPathConstants.NODESET);
+
+==================================================================
