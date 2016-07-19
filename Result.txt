@@ -1,0 +1,8 @@
+implement reading from console and writing into a filestopragha shoba soham 
+
+sandy
+a
+b soham sandy ragha ragha soham sandy shoba
+Write a program to read words from a file. Count the 
+repeated or duplicated words. Sort it by maximum repeated or
+duplicated word count.

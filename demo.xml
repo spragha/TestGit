@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<OrderStatusUpdateAcknowledgedRequest>
+	<OrderResponse>
+		<OrderReference>
+			<BuyersID>50007812</BuyersID>
+		</OrderReference>
+		<BuyerParty>
+			<Party>
+				<PartyIdentification>
+					<ID identificationSchemeName="DUNS"></ID>
+				</PartyIdentification>
+			</Party>
+		</BuyerParty>
+		<SellerParty>
+			<Party>
+				<PartyIdentification>
+					<ID identificationSchemeName="DUNS"></ID>
+				</PartyIdentification>
+			</Party>
+		</SellerParty>
+		<OrderResponseMessageInfo>
+			<MessageInfo>
+				<CompletionCode>510</CompletionCode>
+					<Code>XXXX</Code>
+				<Message>Order Acknowledged</Message>
+				<Severity>Informational</Severity>
+			</MessageInfo>
+		</OrderResponseMessageInfo>
+		<RespondedOrderLine>
+			<LineItem OrderType="Provision" OrderSubType="">
+				<BuyersID>1</BuyersID>
+				<Item>
+					<SellersItemIdentification>
+						<ID></ID>
+					</SellersItemIdentification>
+				</Item>
+				<LineStatus>Acknowledged</LineStatus>
+				<Site End="B"/>
+				<Appointment>
+					<AppointmentDate></AppointmentDate>
+					<AppointmentTimeslot></AppointmentTimeslot>
+				</Appointment>
+				<Features/>
+				<Dates>
+					<RequiredByDate></RequiredByDate>
+				</Dates>
+			</LineItem>
+			<OrderLineMessageInfo>
+				<MessageInfo>
+					<CompletionCode>510</CompletionCode>
+						<Code>XXXX</Code>
+					<Message>Order Acknowledged</Message>
+					<Severity>Informational</Severity>
+				</MessageInfo>
+			</OrderLineMessageInfo>
+		</RespondedOrderLine>
+	</OrderResponse>
+</OrderStatusUpdateAcknowledgedRequest>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<share>
+	<stocks>
+		<commision>10</commision>
+       <stock type="citi">
+              <symbol>Citibank</symbol>
+              <price>100</price>
+              <quantity>1000</quantity>
+       </stock>
+       <stock type="axis">
+              <symbol>Axis bank</symbol>
+              <price>90</price>
+              <quantity>2000</quantity>
+       </stock>
+       <discounts>0.2</discounts>
+	</stocks>
+</share>

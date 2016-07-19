@@ -1,0 +1,9 @@
+2014-11-25 12:51:11,834 [main] INFO  Log4jDemo  - --------info--------
+2014-11-25 12:51:11,834 [main] DEBUG Log4jDemo  - ------debug--------
+2014-11-25 12:51:11,849 [main] ERROR Log4jDemo  - -------error-------
+2014-11-25 12:51:11,849 [main] FATAL Log4jDemo  - ------fatal--------
+2014-11-25 12:52:34,003 [main] INFO  Log4jDemo  - hi this is logger
+2014-11-25 12:52:34,003 [main] INFO  Log4jDemo  - --------info--------
+2014-11-25 12:52:34,003 [main] DEBUG Log4jDemo  - ------debug--------
+2014-11-25 12:52:34,003 [main] ERROR Log4jDemo  - -------error-------
+2014-11-25 12:52:34,003 [main] FATAL Log4jDemo  - ------fatal--------
