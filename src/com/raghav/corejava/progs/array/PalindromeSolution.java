@@ -34,7 +34,7 @@ public class PalindromeSolution {
 	}
 
 	public static void main(String[] args) {
-		String testStr = "KKAABC";
+		String testStr = "KKAAKK";
 
 		System.out.println("Can palindrome be formed from '" + testStr
 				+ "' ? : " + canMakeAPalindrome(testStr));
